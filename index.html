@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#ffffff">
+<title>كود خصم دبدوب EK3</title>
+<meta name="description" content="انسخ كود خصم دبدوب EK3 وانتقل إلى متجر دبدوب.">
+<style>
+:root{--ink:#211b2d;--muted:#6f6879;--purple:#7138d5;--deep:#2b1852;--soft:#f5efff;--line:#e7dafa}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;font-family:Tahoma,Arial,sans-serif;color:var(--ink);background:linear-gradient(155deg,#fff9fc,#f5efff 55%,#fff)}
+main{width:min(100% - 28px,560px);margin:auto;padding:24px 0 36px}
+.brand{text-align:center;font-size:21px;font-weight:900;color:var(--deep);margin:8px 0 24px}
+.panel{background:#fff;border:1px solid var(--line);border-radius:27px;padding:27px 20px;text-align:center;box-shadow:0 16px 48px #45207812}
+.tag{display:inline-block;background:#f1e7ff;color:#6230ae;border-radius:999px;padding:8px 15px;font-size:13px;font-weight:800}
+h1{font-size:29px;line-height:1.5;margin:17px 0 9px;color:var(--deep)}
+.lead{font-size:15px;line-height:1.9;color:var(--muted);margin:0 0 20px}
+.offer{background:linear-gradient(135deg,#7138d5,#a06aec);color:white;border-radius:19px;padding:15px 10px;margin:15px 0}
+.offer strong{display:block;font-size:27px}.offer span{font-size:13px}
+.code-card{border:2px dashed #b99be9;background:#fbf8ff;border-radius:22px;padding:19px 14px 17px;margin:18px 0}
+.code-label{font-size:14px;color:var(--muted);margin-bottom:4px}
+.code{font-size:clamp(70px,19vw,98px);line-height:1.1;font-weight:1000;letter-spacing:6px;color:var(--purple);direction:ltr;user-select:all}
+button,.shop{font:inherit;width:100%;border:0;border-radius:15px;padding:17px 14px;font-size:18px;font-weight:900;cursor:pointer}
+.copy{background:var(--deep);color:#fff;margin-top:15px;touch-action:manipulation}
+.copy:active{transform:scale(.99)}
+#status{min-height:25px;margin-top:10px;font-size:14px;font-weight:700;color:#24804b}
+.shop{display:block;text-decoration:none;background:#f0e7ff;color:var(--deep);margin-top:13px}
+.hint{font-size:13px;line-height:1.9;color:var(--muted);margin-top:15px}
+.note{font-size:12px;line-height:1.9;color:#777;margin:15px 2px 0}
+</style>
+</head>
+<body>
+<main>
+<div class="brand">DABDOOB · دبدوب</div>
+<section class="panel">
+<div class="tag">كود خصم دبدوب</div>
+<h1>وفّر على مشترياتك من دبدوب</h1>
+<p class="lead">انسخ الكود واستخدمه عند إتمام طلبك على متجر دبدوب.</p>
+<div class="offer"><strong>خصومات تصل إلى 75٪</strong><span>على العروض والمنتجات المؤهلة لدى المتجر</span></div>
+<div class="code-card">
+<div class="code-label">كود الخصم</div>
+<div class="code" id="coupon">EK3</div>
+<button class="copy" id="copyBtn" type="button">انسخ كود EK3</button>
+<div id="status" role="status" aria-live="polite"></div>
+</div>
+<a class="shop" href="https://dabdoob.com/ar-SA" target="_blank" rel="noopener">تسوّق الآن على دبدوب</a>
+<div class="hint">1. انسخ الكود EK3<br>2. انتقل إلى متجر دبدوب<br>3. أدخل الكود عند إتمام الطلب إذا كان المنتج مؤهلًا.</div>
+<p class="note">تختلف قيمة الخصم حسب العروض والمنتجات وشروط المتجر. هذه صفحة ترويجية مستقلة وليست الصفحة الرسمية لمتجر دبدوب.</p>
+</section>
+</main>
+<script>
+(function(){
+ const code='EK3',btn=document.getElementById('copyBtn'),status=document.getElementById('status');
+ async function copyCode(){
+  let ok=false;
+  try{if(navigator.clipboard&&window.isSecureContext){await navigator.clipboard.writeText(code);ok=true;}}catch(e){}
+  if(!ok){
+   const t=document.createElement('textarea');t.value=code;t.setAttribute('readonly','');
+   t.style.position='fixed';t.style.opacity='0';t.style.left='-9999px';document.body.appendChild(t);
+   t.select();t.setSelectionRange(0,t.value.length);
+   try{ok=document.execCommand('copy');}catch(e){}
+   t.remove();
+  }
+  if(ok){btn.textContent='تم نسخ الكود ✓';status.textContent='تم نسخ EK3 — استخدمه في المتجر';setTimeout(()=>btn.textContent='انسخ كود EK3',2200);}
+  else{status.textContent='انسخ الكود يدويًا: EK3';}
+ }
+ btn.addEventListener('click',copyCode);
+})();
+</script>
+</body>
+</html>
